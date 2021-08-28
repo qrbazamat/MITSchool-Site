@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Yanvar",
+        "Android": 300,
+        "Web": 200,
+        "Kompyuter Savodxonlik": 400
+    },
+    {
+        "name": "Fevral",
+        "Android": 380,
+        "Web": 400,
+        "Kompyuter Savodxonlik": 320
+    },
+    {
+        "name": "Mart",
+        "Android": 260,
+        "Web": 360,
+        "Kompyuter Savodxonlik": 200
+    },
+    {
+        "name": "Aprel",
+        "Android": 500,
+        "Web": 200,
+        "Kompyuter Savodxonlik": 280
+    },
+    {
+        "name": "May",
+        "Android": 300,
+        "Web": 480,
+        "Kompyuter Savodxonlik": 250
+    },
+    {
+        "name": "Iyun",
+        "Android": 0,
+        "Web": 560,
+        "Kompyuter Savodxonlik": 340
+    },
+    {
+        "name": "Iyul",
+        "Android": 100,
+        "Web": 250,
+        "Kompyuter Savodxonlik": 400
+    },
+    {
+        "name": "Avgust",
+        "Android": 300,
+        "Web": 200,
+        "Kompyuter Savodxonlik": 340
+    },
+    {
+        "name": "Setabr",
+        "Android": 0,
+        "Web": 0,
+        "Kompyuter Savodxonlik": 0
+    },
+    {
+        "name": "Oktabr",
+        "Android": 0,
+        "Web": 0,
+        "Kompyuter Savodxonlik": 0
+    },
+    {
+        "name": "Noyabr",
+        "Android": 0,
+        "Web": 0,
+        "Kompyuter Savodxonlik": 0
+    },
+    {
+        "name": "Dekabr",
+        "Android": 0,
+        "Web": 0,
+        "Kompyuter Savodxonlik": 0
+    }
+]

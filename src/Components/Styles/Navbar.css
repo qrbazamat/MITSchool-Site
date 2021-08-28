@@ -1,0 +1,29 @@
+.Navbar {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    background-color: #ffffff25;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    margin-bottom: 50px;
+}
+
+.ymaps-2-1-79-map-copyrights-promo,
+.ymaps-2-1-79-copyright {
+    display: none !important;
+}
+
+.Navbar a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #10f710;
+}
+
+.Navbar a:hover {
+    color: #ff0000;
+}
