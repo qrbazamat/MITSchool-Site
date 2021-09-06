@@ -1,7 +1,8 @@
 .chart-container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    margin-top: -16px;
+    position: relative;
+    top: 0;
 }
 
 html, body {
@@ -15,6 +16,10 @@ html, body {
 
 .recharts-responsive-container {
     height: 400px !important;
+}
+
+.recharts-wrapper {
+    width: 100% !important;
 }
 
 .recharts-default-legend {
@@ -38,4 +43,10 @@ html, body {
     display: inline-block;
     margin: 20px;
     font-size: 25px;
+}
+
+@media screen and (max-width: 760px) {
+    .recharts-default-legend {
+        font-size: 14px;
+    }
 }

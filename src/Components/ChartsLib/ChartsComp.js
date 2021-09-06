@@ -18,13 +18,18 @@ class ChartsComp extends PureComponent {
     }
 
     render() {
+        document.title = 'IT School statistika'
         const active = [];
         let k = this.state.isLineChartActive ? 0 : 1;
         active[k] = {
             borderBottom: '2px solid red',
         }
 
-        const bgStyle = {background: k? '#1a2b3c':'#a1a1a1'};
+        const bgStyle = {
+            background: k ? '#1a2b3c' : '#a1a1a1',
+            paddingTop: '40px',
+
+        };
 
         return (
             <div className='chart-container' style={bgStyle}>
@@ -42,7 +47,7 @@ class ChartsComp extends PureComponent {
                             </li>
                             <li>
                                 <Link
-                                    to='area-chart'
+                                    to='/area-chart'
                                     style={active[1]}
                                     onClick={() => this.clickHandlerActive(!1)}
                                 >

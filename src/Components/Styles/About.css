@@ -1,0 +1,26 @@
+.about-bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1a2b3cac;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 30px;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+.about-today {
+    min-height: 600px;
+    background-color: #000000f0;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+@media screen and (max-width: 500px) {
+    .about-today {
+        background-size: 100% auto;
+    }
+}

@@ -1,22 +1,74 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './Styles/Navbar.css';
+import Logo from './image/logo-it-park.png';
 
-function Navbar() {
+function Navbar(props) {
+    const [menuOpen, setMenuOpen] = useState(!1)
+
     return (
-        <ul className='Navbar'>
-            <li>
-                <Link to='/'>Asosiy</Link>
-            </li>
-            <li>
-                <Link to='/about'>Biz haqimizda</Link>
-            </li>
-            <li>
-                <Link to='/contact'>Bog'lanish</Link>
-            </li>
-            <li>
-                <Link to='/line-chart'>Statistika</Link>
-            </li>
-        </ul>
+        <div className='nav-container'
+        >
+            <div className='logo'>
+                <NavLink
+                    exact
+                    to='/'
+                >
+                    <img src={Logo} width='100%' alt="Logo" />
+                </NavLink>
+            </div>
+
+            <div
+                className={`menu-btn ${menuOpen ? 'open' : ''}`}
+                onClick={() => setMenuOpen(!menuOpen)}
+            >
+                <div
+                    className='menu-btn-burger'></div>
+            </div>
+
+            <ul className={`Navbar ${menuOpen ? 'open' : ''}`}>
+                <li>
+                    <NavLink
+                        exact
+                        to='/'
+                    >
+                        Asosiy
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        exact
+                        to='/about'
+                    >
+                        Biz haqimizda
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        exact
+                        to='/contact'
+                    >
+                        Bog'lanish
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        exact
+                        to='/line-chart'
+                    >
+                        Statistika
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        exact
+                        to='/auth/sign-in'
+                    >
+                        Kirish
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
     )
 }
 

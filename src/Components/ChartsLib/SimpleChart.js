@@ -10,8 +10,6 @@ class SimpleChart extends PureComponent {
         return (
             <ResponsiveContainer width='100%' height='200%'>
                 <LineChart
-                    width={800}
-                    height={400}
                     data={data}
                     margin={{
                         top: 5,

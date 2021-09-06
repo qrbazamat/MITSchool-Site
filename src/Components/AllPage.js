@@ -3,19 +3,27 @@ import About from './About';
 import Contact from './Contact';
 import Header from './Header';
 import Navbar from './Navbar';
+import Auth from './Auth';
+import ErrorPage from './ErrorPage';
 import Statistics from './ChartsLib/ChartsComp';
+import Dashboard from './Dashboard';
 
 function AllPage() {
+
     return(
         <>
             <BrowserRouter>
                 <Navbar />
-                
                 <Switch>
                     <Route exact path='/' component={Header} />
                     <Route exact path='/about' component={About} />
                     <Route exact path='/contact' component={Contact} />
                     <Route exact path='/line-chart' component={Statistics} />
+                    <Route exact path='/auth/sign-in'>
+                        <Auth />
+                    </Route>
+                    <Route path='/dashboard' component={Dashboard} />
+                    <Route path='*' component={ErrorPage} />
                 </Switch>
             </BrowserRouter>
         </>

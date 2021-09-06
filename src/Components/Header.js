@@ -28,6 +28,7 @@ class Header extends React.Component {
     }
 
     render() {
+        document.title = 'IT School Mingbuloq'
         return (
             <div className='Header' onClick={this.clickCheck}>
                 <Particles
@@ -116,7 +117,7 @@ class Header extends React.Component {
                 />
 
                 <h1 className='HeaderTitle'>
-                    IT-School Mingbuloq
+                    IT School Mingbuloq
                 </h1>
             </div>
         )

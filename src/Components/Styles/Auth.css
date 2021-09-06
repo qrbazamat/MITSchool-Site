@@ -1,0 +1,36 @@
+.auth {
+    width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #191970;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    width: 600px;
+    max-width: 600px;
+    background-color: mintcream;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+}
+
+.form-row > input {
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    background-color: mintcream;
+}

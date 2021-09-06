@@ -1,5 +1,6 @@
 import React from 'react';
 import { YMaps, Map, Placemark, FullscreenControl, ZoomControl, GeolocationControl, RulerControl } from 'react-yandex-maps';
+import MapUzb from './image/map_uzb.png';
 
 const MapStyle = {
     display: 'flex',
@@ -12,7 +13,13 @@ function MyMap() {
             <div
                 style={{
                     display: 'inline-block',
-                    border: '2px solid gray',
+                    minHeight: '300px',
+                    minWidth: '400px',
+                    border: '2px solid #1a2b3c',
+                    background: `url(${MapUzb})`,
+                    backgroundSize: '100%',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center center'
                 }}
             >
                 <YMaps>

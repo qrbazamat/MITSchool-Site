@@ -1,0 +1,38 @@
+.footer-app {
+    background-color: #000000c5;
+    color: honeydew;
+    padding: 20px;
+}
+
+.link-icon {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.link-icon a {
+    display: inline-block;
+    border-radius: 20px;
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+}
+
+.link-icon a img {
+    border-radius: 20px;
+}
+
+.link-icon a:hover img {
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 480px) {
+    .link-icon a {
+        width: 120px;
+        height: 120px;
+    }
+}
