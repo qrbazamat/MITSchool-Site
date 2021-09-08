@@ -12,15 +12,70 @@
 }
 
 .about-today {
-    min-height: 600px;
-    background-color: #000000f0;
+    height: 400px;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: auto 120%;
     background-position: center;
 }
 
-@media screen and (max-width: 500px) {
+.courses-filter {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.courses-filter button {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.show {
+    transition: transform .8s;
+}
+
+.hide {
+    transform: scale(0);
+    position: relative;
+    animation: hide 1s .6s forwards;
+}
+
+@keyframes hide {
+    to {
+        position: absolute;
+    }
+}
+
+.title-bottom {
+    color: #fff;
+    max-width: 600px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    border: 1px solid #7EB928;
+}
+
+.text-one-color {
+    color: #7EB928;
+}
+
+.taj {
+    text-align: justify;
+}
+
+@media screen and (max-width: 620px) {
     .about-today {
         background-size: 100% auto;
+        height: 400px;
+    }
+
+    .title-bottom {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-today {
+        height: 250px;
     }
 }

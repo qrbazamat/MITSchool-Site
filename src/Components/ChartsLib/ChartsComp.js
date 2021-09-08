@@ -4,10 +4,10 @@ import SimpleChartAre from './SimpleChartArea';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 
 class ChartsComp extends PureComponent {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
-            isLineChartActive: true
+            isLineChartActive: this.props.isLinear
         }
     }
 
@@ -40,7 +40,7 @@ class ChartsComp extends PureComponent {
                                 <Link
                                     to='/line-chart'
                                     style={active[0]}
-                                    onClick={() => this.clickHandlerActive(!0)}
+                                    onClick={() => this.clickHandlerActive()}
                                 >
                                     Line Chart
                                 </Link>
@@ -49,7 +49,7 @@ class ChartsComp extends PureComponent {
                                 <Link
                                     to='/area-chart'
                                     style={active[1]}
-                                    onClick={() => this.clickHandlerActive(!1)}
+                                    onClick={() => this.clickHandlerActive()}
                                 >
                                     Area Chart
                                 </Link>

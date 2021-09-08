@@ -18,8 +18,16 @@ function AllPage() {
                     <Route exact path='/' component={Header} />
                     <Route exact path='/about' component={About} />
                     <Route exact path='/contact' component={Contact} />
-                    <Route exact path='/line-chart' component={Statistics} />
+                    <Route exact path='/line-chart'>
+                        <Statistics isLinear={!0} />
+                    </Route>
+                    <Route exact path='/area-chart'>
+                        <Statistics isLinear={!1} />
+                    </Route>
                     <Route exact path='/auth/sign-in'>
+                        <Auth />
+                    </Route>
+                    <Route exact path='/auth/sign-up'>
                         <Auth />
                     </Route>
                     <Route path='/dashboard' component={Dashboard} />

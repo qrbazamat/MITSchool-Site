@@ -34,3 +34,8 @@
     border: none;
     background-color: mintcream;
 }
+
+.modal {
+    display: flex !important;
+    align-items: center !important;
+}

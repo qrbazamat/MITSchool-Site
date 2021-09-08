@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Styles/Navbar.css';
-import Logo from './image/logo-it-park.png';
+import Logo from './image/IT-Center-Logo.svg';
 
 function Navbar(props) {
     const [menuOpen, setMenuOpen] = useState(!1)
@@ -13,6 +13,7 @@ function Navbar(props) {
                 <NavLink
                     exact
                     to='/'
+                    onClick={() => menuOpen? setMenuOpen(!menuOpen):0}
                 >
                     <img src={Logo} width='100%' alt="Logo" />
                 </NavLink>
@@ -31,6 +32,7 @@ function Navbar(props) {
                     <NavLink
                         exact
                         to='/'
+                        onClick={() => menuOpen? setMenuOpen(!menuOpen):0}
                     >
                         Asosiy
                     </NavLink>
@@ -39,6 +41,7 @@ function Navbar(props) {
                     <NavLink
                         exact
                         to='/about'
+                        onClick={() => menuOpen? setMenuOpen(!menuOpen):0}
                     >
                         Biz haqimizda
                     </NavLink>
@@ -47,6 +50,7 @@ function Navbar(props) {
                     <NavLink
                         exact
                         to='/contact'
+                        onClick={() => menuOpen? setMenuOpen(!menuOpen):0}
                     >
                         Bog'lanish
                     </NavLink>
@@ -55,6 +59,7 @@ function Navbar(props) {
                     <NavLink
                         exact
                         to='/line-chart'
+                        onClick={() => menuOpen? setMenuOpen(!menuOpen):0}
                     >
                         Statistika
                     </NavLink>
@@ -63,6 +68,7 @@ function Navbar(props) {
                     <NavLink
                         exact
                         to='/auth/sign-in'
+                        onClick={() => menuOpen? setMenuOpen(!menuOpen):0}
                     >
                         Kirish
                     </NavLink>

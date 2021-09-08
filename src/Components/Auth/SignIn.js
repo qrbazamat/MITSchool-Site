@@ -43,7 +43,6 @@ function SignIn(props) {
                         <Modal
                             isOpen={modal}
                             /*toggle={toggle}*/
-                            className={{}}
                         >
                             <ModalHeader
                                 className='d-flex justify-content-between text-danger'

@@ -29,7 +29,7 @@ class Index extends PureComponent {
 
     onchangeInput = e => {
         const { name, value } = e.target
-        const formData = { ...initialState }
+        const formData = { ...this.state.formData }
 
         formData[name] = value
 
