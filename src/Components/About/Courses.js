@@ -88,7 +88,7 @@ function Courses() {
                                     key={course.title}
                                 >
                                     <Card
-                                        className='h-100 p-1'
+                                        className='h-100 p-1 b-radius'
                                     >
                                         <CardImg
                                             top

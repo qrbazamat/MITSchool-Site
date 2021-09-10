@@ -1,13 +1,29 @@
+import { useState } from "react"
 import Footer from "./Footer"
 import './Styles/About.css'
+import ArrowUpward from '@material-ui/icons/ArrowUpward'
 import AnimateBgImage from './image/v4.gif'
 import TodayPark from './image/today-park.png'
 import Courses from "./About/Courses"
 import Mentors from "./About/Mentors"
-import BestPupil from "./About/BestPupil"
+import BestPupil from "./About/BestPupils"
 
 function About() {
     document.title = 'IT School haqida'
+    const [top, setTop] = useState(!1)
+
+    window.onscroll = () => {
+        window.scrollY < 400 ?
+        setTop(!1) : setTop(!0)
+    }
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
     return (
         <>
             <div
@@ -51,6 +67,18 @@ function About() {
                 <Mentors />
 
                 <BestPupil />
+
+
+                {/* Go To Top */}
+
+                <div
+                    className={`to-top ${top?'active':''}`}
+                    onClick={() => scrollToTop()}
+                >
+                    <span>
+                        <ArrowUpward style={{fontSize: '40px'}} />
+                    </span>
+                </div>
 
             </div>
             <Footer />

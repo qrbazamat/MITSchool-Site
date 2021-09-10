@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.b-radius {
+    border-radius: 10px !important;
+}
+
 .about-bg {
     width: 100vw;
     height: 100vh;
@@ -60,6 +68,67 @@
 
 .taj {
     text-align: justify;
+}
+
+.to-top {
+    display: none;
+    cursor: pointer;
+}
+
+.to-top.active {
+    background-color: #7EB928;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+    box-shadow: 0 0 4px 1px #a1a1a1;
+    z-index: 10;
+}
+
+.to-top.active span {
+    display: inline-block;
+    color: #fff;
+}
+
+.mentor-card {
+    width: 75%;
+}
+
+.mentor-card.right {
+    flex-direction: row-reverse !important;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.mentor-card p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1000px) {
+    .mentor-card {width: 100%;}
+}
+
+@media screen and (max-width: 780px) {
+    .mentor-card h1 {
+        font-size: 25px;
+    }
+
+    .mentor-card img {
+        width: 180px !important;
+        height: 180px !important;
+    }
+
+    .mentor-card h4 {
+        font-size: 18px;
+    }
+
+    .mentor-card p {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 620px) {
