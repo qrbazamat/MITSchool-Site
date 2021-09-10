@@ -1,0 +1,37 @@
+[
+    {
+        "fullName": "Abdumalik Valixonov",
+        "role": "Android developer",
+        "description": "Toshkent Axborot Texnologiyalari Universiteti talabasi bo'lgan. Mutahasisligi - mobile ilovalar yaratish."
+    },
+    {
+        "fullName": "Azamat Qurbanov",
+        "role": "Web App developer",
+        "description": "Toshkent Axborot Texnologiyalari Universiteti talabasi bo'lgan. Mutahasisligi - web site va ilovalar yaratish."
+    },
+    {
+        "fullName": "Azizbek Rasulov",
+        "role": "Java and Web developer",
+        "description": "Namangan Davlat Universiteti talabasi. Mutahasisligi - web site va ilovalar yaratish."
+    },
+    {
+        "fullName": "Davron Mamitaliyev",
+        "role": "IT Manager",
+        "description": "Namangan Davlat Universiteti talabasi. Mutahasisligi - IT sohasi menejeri va Test Case developer."
+    },
+    {
+        "fullName": "Dilnoza Falonchiyeva",
+        "role": "Bosh kotib",
+        "description": "Mutahasisligi - Kompyuter asoslari bilimdoni va office dasturlar bilan ishlash."
+    },
+    {
+        "fullName": "Javohir Falonchiyev",
+        "role": "Fotoshop. 3D Max. Python",
+        "description": "Namangan Davlat Universiteti talabasi. Mutahasisligi - Fotoshop dasturida ishlash va montaj ustasi."
+    },
+    {
+        "fullName": "Tursunali Erkinboyev",
+        "role": "Desktop developer",
+        "description": "Toshkent Axborot Texnologiyalari Universiteti Farg'ona filiali talabasi. Mutahasisligi - desktop ilovalar yaratish."
+    }
+]

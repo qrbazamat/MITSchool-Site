@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Android",
+        "price": 30,
+        "type": "mobile",
+        "description": "Mobil dasturlashni o'rganing va dunyodagi eng ko'p tarqalgan Operatsion Tizim (Android) uchun ilovalar yarating."
+    },
+    {
+        "title": "iOS (Apple)",
+        "price": 35,
+        "type": "mobile",
+        "description": "Mobil dasturlashni o'rganing va iOS (Apple tizimi) platformasi uchun chiroyli interfaysli ilovalar yarating."
+    },
+    {
+        "title": "HTML 5",
+        "price": 25,
+        "type": "web",
+        "description": "HTML - Hyper Text Markup Language (Gipermatnli Belgilash Tili), HTMLni o'rganing chunki, u web saytlarning asosi."
+    },
+    {
+        "title": "CSS 3",
+        "price": 25,
+        "type": "web",
+        "description": "CSS - Cascading Style Sheet (Kaskadli Stillar Varog'i), CSSni o'rganing va chiroyli dizanga ega web saytlar yarating."
+    },
+    {
+        "title": "Java Script",
+        "price": 28,
+        "type": "web",
+        "description": "Java Script dasturlash tilini biz bilan o'rganing va yuqori malakali Frontend dasturchiga aylaning."
+    },
+    {
+        "title": "Linux OS",
+        "price": 18,
+        "type": "ks",
+        "description": "Markazimizga tashrif buyuring va dasturchilar ichida ommalashgan Linux OS platformasida ishlash ko'nikmalarini o'rganing."
+    },
+    {
+        "title": "MacOS",
+        "price": 18,
+        "type": "ks",
+        "description": "Markazimizga tashrif buyuring va Apple gigantining Mac OS platformasida ishlash ko'nikmalarini o'rganing."
+    },
+    {
+        "title": "Windows OS",
+        "price": 18,
+        "type": "ks",
+        "description": "Markazimizga tashrif buyuring va eng ko'p foydalanuvchiga ega bo'lgan Windows OS platformasida ishlash ko'nikmalarini o'rganing."
+    },
+    {
+        "title": "Node Js",
+        "price": 30,
+        "type": "web",
+        "description": "Node Js Java Scriptning Backend uchun yaratilgan framework. Node js ni o'rganing va Fullstack dasturchiga aylaning."
+    },
+    {
+        "title": "React Js",
+        "price": 30,
+        "type": "web",
+        "description": "React Js - bu java scriptning web ilovalar va UI uchun ishlab chiqilgan kutubxonasi."
+    }
+]
