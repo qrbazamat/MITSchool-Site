@@ -9,6 +9,7 @@
 
 .nav-container {
     position: sticky;
+    top: 0;
     display: flex;
     background-color: #000000c5;
     justify-content: space-between;
@@ -49,6 +50,11 @@
 .Navbar a:hover,
 .Navbar a.active {
     color: #7EB928;
+}
+
+.apps-logo {
+    width: 50px;
+    cursor: pointer;
 }
 
 
@@ -97,7 +103,7 @@
     transform: rotate(-135deg) translate(20px, -20px);
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1200px) {
     .Navbar {
         width: 400px;
         max-width: 400px;
@@ -111,6 +117,15 @@
         flex-direction: column;
         transition: transform .5s ease-in;
         transform: translateX(100%);
+    }
+
+    .menu-btn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-container .logo {
+        width: 120px;
     }
 
     .Navbar.open {
