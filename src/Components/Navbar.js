@@ -1,10 +1,16 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import Bounce from 'react-reveal/Bounce';
+import { NavLink, useLocation } from 'react-router-dom';
 import './Styles/Navbar.css';
 import Logo from './image/IT-Center-Logo.svg';
+import AppsIcon from './image/Apps-Icon/apps.svg'
+import AppsActiveIcon from './image/Apps-Icon/apps-active.svg'
 
 function Navbar(props) {
     const [menuOpen, setMenuOpen] = useState(!1)
+    const location = useLocation()
+
+    const appsIcon = location.pathname === '/apps' ? AppsActiveIcon : AppsIcon;
 
     return (
         <div className='nav-container' id='Top'
@@ -13,10 +19,82 @@ function Navbar(props) {
                 <NavLink
                     exact
                     to='/'
-                    onClick={() => menuOpen? setMenuOpen(!menuOpen):0}
+                    onClick={() => menuOpen ? setMenuOpen(!menuOpen) : 0}
                 >
                     <img src={Logo} width='100%' alt="Logo" />
                 </NavLink>
+            </div>
+
+            <div></div>
+
+            <NavLink
+                exact
+                to='/apps'
+            >
+                <div className="apps-logo">
+                    <img src={appsIcon} width='100%' alt="Apps Logo" />
+                </div>
+            </NavLink>
+
+            <div className='navbar-container'>
+                <ul className={`Navbar ${menuOpen ? 'open' : ''}`}>
+                    <li>
+                        <NavLink
+                            exact
+                            to='/'
+                            onClick={() => menuOpen ? setMenuOpen(!menuOpen) : 0}
+                        >
+
+                            <Bounce left duration={3000}>
+                                Asosiy
+                            </Bounce>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            exact
+                            to='/about'
+                            onClick={() => menuOpen ? setMenuOpen(!menuOpen) : 0}
+                        >
+                            <Bounce left duration={2500}>
+                                Biz haqimizda
+                            </Bounce>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            exact
+                            to='/contact'
+                            onClick={() => menuOpen ? setMenuOpen(!menuOpen) : 0}
+                        >
+                            <Bounce left duration={2000}>
+                                Bog'lanish
+                            </Bounce>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            exact
+                            to='/line-chart'
+                            onClick={() => menuOpen ? setMenuOpen(!menuOpen) : 0}
+                        >
+                            <Bounce left duration={1500}>
+                                Statistika
+                            </Bounce>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            exact
+                            to='/auth/sign-in'
+                            onClick={() => menuOpen ? setMenuOpen(!menuOpen) : 0}
+                        >
+                            <Bounce left duration={1000}>
+                                Kirish
+                            </Bounce>
+                        </NavLink>
+                    </li>
+                </ul>
             </div>
 
             <div
@@ -26,54 +104,6 @@ function Navbar(props) {
                 <div
                     className='menu-btn-burger'></div>
             </div>
-
-            <ul className={`Navbar ${menuOpen ? 'open' : ''}`}>
-                <li>
-                    <NavLink
-                        exact
-                        to='/'
-                        onClick={() => menuOpen? setMenuOpen(!menuOpen):0}
-                    >
-                        Asosiy
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        exact
-                        to='/about'
-                        onClick={() => menuOpen? setMenuOpen(!menuOpen):0}
-                    >
-                        Biz haqimizda
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        exact
-                        to='/contact'
-                        onClick={() => menuOpen? setMenuOpen(!menuOpen):0}
-                    >
-                        Bog'lanish
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        exact
-                        to='/line-chart'
-                        onClick={() => menuOpen? setMenuOpen(!menuOpen):0}
-                    >
-                        Statistika
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        exact
-                        to='/auth/sign-in'
-                        onClick={() => menuOpen? setMenuOpen(!menuOpen):0}
-                    >
-                        Kirish
-                    </NavLink>
-                </li>
-            </ul>
         </div>
     )
 }
