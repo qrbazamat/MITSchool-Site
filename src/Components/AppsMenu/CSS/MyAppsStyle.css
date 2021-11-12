@@ -1,0 +1,111 @@
+* {
+    margin: 0;padding: 0;
+}
+
+.my-apps-container {
+    min-height: calc(100vh);
+    background: linear-gradient(45deg, #123456, #50692f, #a1a2ff);
+    user-select: none;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.w-md-75 {
+    width: 100%;
+}
+
+.scale-app:hover {
+    transform: scale(1.2);
+}
+
+.apps-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .w-md-75 {
+        width: 75%;
+    }
+
+    .col-md-my-5x12 {
+        margin: 0 .5rem !important;
+        width: calc(20% - 1rem) !important;
+    }
+
+    .apps-title {
+        font-size: 1vw;
+    }
+}
+
+.animate-apps {
+    animation: animate-apps 2s ease-in-out;
+}
+
+@keyframes animate-apps {
+    from {
+        transform: translateY(-50vh) scale(0);
+    }
+    to {
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .col-landscape-6 {
+        width: calc(100%/6) !important;
+    }
+
+    .w-md-75 {
+        width: 80%;
+    }
+
+    .apps-title {
+        font-size: 1vw;
+    }
+}
+
+@media screen and (max-aspect-ratio: 768/1024) {
+    .col-landscape-6 {
+        width: calc(100%/4) !important;
+    }
+
+    .w-md-75 {
+        width: 80%;
+    }
+
+    .apps-title {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-aspect-ratio: 80/128) {
+    .col-landscape-6 {
+        width: calc(100%/4) !important;
+    }
+
+    .w-md-75 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-aspect-ratio: 80/45) and (max-width: 1000px) {
+    .col-landscape-6 {
+        width: calc(100%/8) !important;
+    }
+
+    .w-md-75 {
+        width: 100%;
+    }
+}
+
+@media screen and (aspect-ratio: 568/320) and (orientation: landscape) {
+    .w-md-75 {
+        width: 74%;
+    }
+}
