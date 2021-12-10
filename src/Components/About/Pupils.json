@@ -1,14 +1,30 @@
 [
     {
-        "fullName": "Dilshod Falonchiyev",
+        "fullName": "Dilshodbek Sobirjonov",
         "role": "Frontend developer"
     },
     {
-        "fullName": "Islom Falonchiyev",
+        "fullName": "Islombek Ermatov",
         "role": "Frontend developer"
     },
     {
-        "fullName": "Javlon Falonchiyev",
+        "fullName": "Javlon Mamajonov",
+        "role": "Frontend developer"
+    },
+    {
+        "fullName": "O'lmasbek Muhammadjonov",
+        "role": "Frontend developer"
+    },
+    {
+        "fullName": "Elbek Omonjonov",
+        "role": "Frontend developer"
+    },
+    {
+        "fullName": "Humoyun Xoshimov",
+        "role": "Frontend developer"
+    },
+    {
+        "fullName": "Sirojiddin Yo'ldoshev",
         "role": "Frontend developer"
     }
 ]

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Flip from 'react-reveal/Flip';
 import AndroidIcon from '../image/Courses-Icon/android-os.svg'
 import AppleIcon from '../image/Courses-Icon/apple-logo.svg'
 import HtmlIcon from '../image/Courses-Icon/html-5.svg'
@@ -43,7 +44,7 @@ function Courses() {
                     <button
                         onClick={() => setFilterCourse('')}
                         style={{
-                            backgroundColor: !filterCourse?'#7EB928':''
+                            backgroundColor: !filterCourse ? '#7EB928' : ''
                         }}
                     >
                         Hamma Kurslar
@@ -51,7 +52,7 @@ function Courses() {
                     <button
                         onClick={() => setFilterCourse('mobile')}
                         style={{
-                            backgroundColor: filterCourse === 'mobile'?'#7EB928':''
+                            backgroundColor: filterCourse === 'mobile' ? '#7EB928' : ''
                         }}
                     >
                         Faqat Mobile Kurslar
@@ -59,7 +60,7 @@ function Courses() {
                     <button
                         onClick={() => setFilterCourse('web')}
                         style={{
-                            backgroundColor: filterCourse === 'web'?'#7EB928':''
+                            backgroundColor: filterCourse === 'web' ? '#7EB928' : ''
                         }}
                     >
                         Faqat Web Kurslar
@@ -67,7 +68,7 @@ function Courses() {
                     <button
                         onClick={() => setFilterCourse('ks')}
                         style={{
-                            backgroundColor: filterCourse === 'ks'?'#7EB928':''
+                            backgroundColor: filterCourse === 'ks' ? '#7EB928' : ''
                         }}
                     >
                         Faqat Savodxonlik Kurslar
@@ -87,37 +88,42 @@ function Courses() {
                                     className={`my-3 show ${hide}`}
                                     key={course.title}
                                 >
-                                    <Card
-                                        className='h-100 p-1 b-radius'
+                                    <Flip
+                                        left
+                                        duration={index*100 + 2000}
                                     >
-                                        <CardImg
-                                            top
-                                            width='90%'
-                                            height='90%'
-                                            className='h-75'
-                                            src={CardImgUrl[index]}
-                                            alt={course.title}
-                                        />
-                                        <CardBody
-                                            className='bg-gray'
+                                        <Card
+                                            className='h-100 p-1 b-radius courses-card'
                                         >
-                                            <CardTitle
-                                                tag='h4'
-                                                className=''
+                                            <CardImg
+                                                top
+                                                width='90%'
+                                                height='90%'
+                                                className='h-75'
+                                                src={CardImgUrl[index]}
+                                                alt={course.title}
+                                            />
+                                            <CardBody
+                                                className='bg-gray'
                                             >
-                                                {course.title}
-                                            </CardTitle>
-                                            <h6>
-                                                Kurs narxi: <b className='text-danger'>{course.price}$</b>
-                                            </h6>
-                                        </CardBody>
-                                        <CardFooter
-                                            tag='small'
-                                            className='taj'
-                                        >
-                                            {course.description}
-                                        </CardFooter>
-                                    </Card>
+                                                <CardTitle
+                                                    tag='h4'
+                                                    className=''
+                                                >
+                                                    {course.title}
+                                                </CardTitle>
+                                                <h6>
+                                                    Kurs narxi: <b className='text-danger'>{course.price}$</b>
+                                                </h6>
+                                            </CardBody>
+                                            <CardFooter
+                                                tag='small'
+                                                className='taj'
+                                            >
+                                                {course.description}
+                                            </CardFooter>
+                                        </Card>
+                                    </Flip>
                                 </Col>
                             )
                         })

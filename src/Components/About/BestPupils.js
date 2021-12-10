@@ -1,14 +1,22 @@
 import React from 'react'
+import Bounce from 'react-reveal/Bounce';
 import Pupils from './Pupils.json'
-import Dilshod from '../image/Pupils/Dilshod.png'
+import Dilshod from '../image/Pupils/Dilshod.jpg'
 import Islom from '../image/Pupils/Islom.png'
+import Elbek from '../image/Pupils/Elbek.png'
+import Ulmasbek from '../image/Pupils/Ulmasbek.png'
 import Javlon from '../image/Pupils/Javlon.jpg'
+import Humoyun from '../image/Pupils/Humoyun.png'
+import Unknown from '../image/Pupils/Unknown.png'
 import { Card, CardFooter, CardImg, Col, Container, Row } from 'reactstrap'
 
 const PupilsImg = [
     Dilshod,
     Islom,
-    Javlon
+    Javlon,
+    Ulmasbek,
+    Elbek,
+    Humoyun
 ]
 
 function BestPupil() {
@@ -36,20 +44,31 @@ function BestPupil() {
                                     className='my-3 mx-xl-1'
                                     key={pupil.fullName}
                                 >
-                                    <Card className='h-100'>
-                                        <CardImg
-                                            src={PupilsImg[i]}
-                                            alt={pupil.fullName}
-                                        />
-                                        <CardFooter>
-                                            <h5>
-                                                {pupil.fullName}
-                                            </h5>
-                                            <p>
-                                                {pupil.role}
-                                            </p>
-                                        </CardFooter>
-                                    </Card>
+                                    <Bounce top delay={i*100}>
+                                        <Card
+                                            className='h-100 pupil-card'
+                                        >
+                                            <CardImg
+                                                src={PupilsImg[i] || Unknown}
+                                                alt={pupil.fullName}
+                                            />
+                                            <CardFooter
+                                                className='h-100'
+                                            >
+                                                <h5
+                                                    style={{
+                                                        fontSize: '15px',
+                                                        textAlign: 'center'
+                                                    }}
+                                                >
+                                                    {pupil.fullName}
+                                                </h5>
+                                                <p>
+                                                    {pupil.role}
+                                                </p>
+                                            </CardFooter>
+                                        </Card>
+                                    </Bounce>
                                 </Col>
                             )
                         })

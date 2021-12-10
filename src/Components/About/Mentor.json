@@ -2,36 +2,43 @@
     {
         "fullName": "Abdumalik Valixonov",
         "role": "Android developer",
+        "phone": "+998 99 815 73 60",
         "description": "Toshkent Axborot Texnologiyalari Universiteti talabasi bo'lgan. Mutahasisligi - mobile ilovalar yaratish."
     },
     {
         "fullName": "Azamat Qurbanov",
         "role": "Web App developer",
+        "phone": "+998 97 156 30 97",
         "description": "Toshkent Axborot Texnologiyalari Universiteti talabasi bo'lgan. Mutahasisligi - web site va ilovalar yaratish."
     },
     {
-        "fullName": "Azizbek Falonchiyev",
+        "fullName": "Azizbek Rasulov",
         "role": "Java and Web developer",
+        "phone": "+998 9X XXX XX XX",
         "description": "Namangan Davlat Universiteti talabasi. Mutahasisligi - web site va ilovalar yaratish."
     },
     {
         "fullName": "Davron Mamitaliyev",
         "role": "IT Manager",
+        "phone": "+998 94 179 20 06",
         "description": "Namangan Davlat Universiteti talabasi. Mutahasisligi - IT sohasi menejeri va Test Case developer."
     },
     {
-        "fullName": "Dilnoza Falonchiyeva",
+        "fullName": "Dilnoza Dovletova",
         "role": "Bosh kotib",
+        "phone": "+998 94 278 74 87",
         "description": "Mutahasisligi - Kompyuter asoslari bilimdoni va office dasturlar bilan ishlash."
     },
     {
         "fullName": "Javohir Falonchiyev",
         "role": "Fotoshop. 3D Max. Python",
+        "phone": "+998 9X XXX XX XX",
         "description": "Namangan Davlat Universiteti talabasi. Mutahasisligi - Fotoshop dasturida ishlash va montaj ustasi."
     },
     {
         "fullName": "Tursunali Erkinboyev",
         "role": "Desktop developer",
+        "phone": "+998 99 001 62 11",
         "description": "Toshkent Axborot Texnologiyalari Universiteti Farg'ona filiali talabasi. Mutahasisligi - desktop ilovalar yaratish."
     }
 ]
