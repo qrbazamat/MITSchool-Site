@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .auth {
     width: 100vw;
     min-height: 100vh;

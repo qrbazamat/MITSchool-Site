@@ -36,8 +36,23 @@ h1.HeaderTitle {
                  -4px -4px #f1f1f1;
 }
 
+#animate-it {
+    display: inline-block !important;
+    animation: animate-it 5s linear infinite;
+}
+
+@keyframes animate-it {
+    0% {transform: rotateZ(0)}
+    10% {transform: rotateZ(360deg)}
+    10.0001% {transform: rotateZ(0)}
+}
+
 @media screen and (max-width: 460px) {
     .Map > div {
         min-width: 80% !important;
+    }
+
+    h1.HeaderTitle {
+        font-size: 40px;
     }
 }

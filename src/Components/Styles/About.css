@@ -46,6 +46,22 @@ html {
     animation: hide 1s .6s forwards;
 }
 
+.wave-black,
+.wave-gray {
+    width: 100%;
+    aspect-ratio: 9/2;
+    background: url('../image/wave-black.svg');
+}
+
+.header-wave {
+    position: absolute;
+    bottom: 0;
+}
+
+.wave-gray {background: url('../image/wave-gray.svg');}
+
+.wave-bg-black {background-color: #000000;}
+
 @keyframes hide {
     to {
         position: absolute;
@@ -70,28 +86,6 @@ html {
     text-align: justify;
 }
 
-.to-top {
-    display: none;
-    cursor: pointer;
-}
-
-.to-top.active {
-    background-color: #7EB928;
-    display: inline-block;
-    padding: 5px;
-    border-radius: 50%;
-    position: fixed;
-    right: 50px;
-    bottom: 80px;
-    box-shadow: 0 0 4px 1px #a1a1a1;
-    z-index: 10;
-}
-
-.to-top.active span {
-    display: inline-block;
-    color: #fff;
-}
-
 .mentor-card {
     width: 75%;
 }
@@ -106,6 +100,10 @@ html {
 .mentor-card p {
     font-size: 20px;
     text-align: justify;
+}
+
+.react-reveal {
+    height: 100% !important;
 }
 
 @media screen and (max-width: 1000px) {
@@ -131,6 +129,25 @@ html {
     }
 }
 
+@media screen and (max-width: 465px) {
+    .mentor-card h1 {
+        font-size: 18px;
+    }
+
+    .mentor-card img {
+        width: 180px !important;
+        height: 180px !important;
+    }
+
+    .mentor-card h4 {
+        font-size: 13px;
+    }
+
+    .mentor-card p {
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 620px) {
     .about-today {
         background-size: 100% auto;
@@ -143,8 +160,20 @@ html {
     }
 }
 
+@media screen and (max-width: 575px) {
+    .pupil-card,
+    .courses-card {
+        width: 80%;
+        margin: auto;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .about-today {
         height: 250px;
     }
+}
+
+.mentor-card-body {
+    overflow: scroll;
 }

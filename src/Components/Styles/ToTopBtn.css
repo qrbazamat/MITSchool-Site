@@ -1,0 +1,25 @@
+.to-top {
+    display: none;
+    cursor: pointer;
+}
+
+.to-top.active:hover {
+    background-color: #7EB928;
+}
+
+.to-top.active {
+    background-color: #7EB928a1;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+    box-shadow: 0 0 4px 1px #a1a1a1;
+    z-index: 10;
+}
+
+.to-top.active span {
+    display: inline-block;
+    color: #fff;
+}

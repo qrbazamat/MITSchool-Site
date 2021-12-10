@@ -1,0 +1,43 @@
+.my-slider-carousel {
+    background: linear-gradient(20deg, red, blue);
+    background-origin: border-box;
+    border: 20px solid transparent;
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.my-slider-carousel * {
+    border-radius: 10px;
+}
+
+.my-slider-carousel .my-slider-item {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+	background: #000;
+	font-weight: 900;
+    height: 60vh !important;
+}
+
+.my-slider-carousel .my-slider-item h3 {
+    font-size: 80px;
+}
+
+.my-slider-carousel .my-slider-item h3.spacial {
+    background: linear-gradient(40deg, red, blue);
+	-webkit-background-clip: text;
+	color: transparent;
+    display: inline-block;
+}
+
+@media screen and (max-width: 850px) {
+    .my-slider-carousel .my-slider-item h3 {
+        font-size: 40px;
+    }
+
+    .my-slider-carousel {
+        border-width: 15px;
+        width: 95%;
+    }
+}

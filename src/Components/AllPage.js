@@ -1,12 +1,14 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import About from './About';
-import Contact from './Contact';
-import Header from './Header';
-import Navbar from './Navbar';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Header from './Pages/Header';
+import Navbar from './Pages/Navbar';
 import Auth from './Auth';
-import ErrorPage from './ErrorPage';
+import ToTopBtn from './ToTopBtn';
+import ErrorPage from './Pages/ErrorPage';
 import Statistics from './ChartsLib/ChartsComp';
-import Dashboard from './Dashboard';
+import Dashboard from './Pages/Dashboard';
+import MyApps from './AppsMenu/MyAppsContainer'
 
 function AllPage() {
 
@@ -14,6 +16,7 @@ function AllPage() {
         <>
             <BrowserRouter>
                 <Navbar />
+                <ToTopBtn />
                 <Switch>
                     <Route exact path='/' component={Header} />
                     <Route exact path='/about' component={About} />
@@ -31,6 +34,7 @@ function AllPage() {
                         <Auth />
                     </Route>
                     <Route path='/dashboard' component={Dashboard} />
+                    <Route path='/apps' component={MyApps} />
                     <Route path='*' component={ErrorPage} />
                 </Switch>
             </BrowserRouter>

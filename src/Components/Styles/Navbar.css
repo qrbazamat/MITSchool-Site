@@ -16,6 +16,13 @@
     align-items: center;
     z-index: 100;
     padding: 0 10px;
+    transition: all .6s;
+    height: 62px;
+    overflow-y: hidden;
+}
+
+.apps-nav {
+    height: 0;
 }
 
 .nav-container .logo {
@@ -105,18 +112,17 @@
 
 @media screen and (max-width: 1200px) {
     .Navbar {
-        width: 400px;
         max-width: 400px;
         background-color: #09090af5;
         position: fixed;
         justify-content: space-evenly;
         top: 0;
-        right: 0;
+        left: 0;
         bottom: 0;
         margin: 0;
         flex-direction: column;
         transition: transform .5s ease-in;
-        transform: translateX(100%);
+        transform: translateX(-100%);
     }
 
     .menu-btn {
