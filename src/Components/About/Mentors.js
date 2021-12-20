@@ -67,7 +67,7 @@ function Mentors() {
                                                     <CardTitle tag='h1'>
                                                         {mentor.fullName}
                                                     </CardTitle>
-                                                    <h4>{mentor.phone}</h4>
+                                                    <h4><a href={"tel:"+mentor.phone}>{mentor.phone}</a></h4>
                                                     <h4 className='text-one-color'>{mentor.role}</h4>
                                                     <p>
                                                         {mentor.description}
