@@ -12,7 +12,12 @@ function Contact() {
                 background: 'gray'
             }}>
                 <h1 className='text-center pt-5'>Biz bilan bog'lanish</h1>
-                <h4 className='text-center py-5'>Manager: +998 (94) 179-20-06</h4>
+                <h4 className='text-center py-5'>
+                    Manager: 
+                    <a href="tel:+998941792006" style={{paddingLeft: '5px'}}>
+                        +998 (94) 179-20-06
+                    </a>
+                </h4>
                 <br />
 
                 <div className='my-slider-carousel'>
