@@ -48,11 +48,17 @@ function Footer() {
             <div className='m-4'>
                 <h4>Developer</h4>
                 <LocalPhoneIcon /> &nbsp;
-                +998-97-156-30-97, &nbsp;&nbsp;&nbsp; +998-33-156-30-97
+                <a href="tel:+998971563097">+998-97-156-30-97</a>, &nbsp;&nbsp;&nbsp; 
+                <a href="tel:+998331563097">+998-33-156-30-97</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <br/>
                 <Telegram /> &nbsp;
-                @azamatqurbanov, &nbsp; <Instagram /> @azamatqurbanovf
+                <a href="https://t.me/azamatqurbanov" target="_blank" rel="noreferrer">
+                    @azamatqurbanov
+                </a>, &nbsp; <Instagram />
+                <a href="https://instagram.com/azamatqurbanovf" target="_blank" rel="noreferrer">
+                    @azamatqurbanovf
+                </a>
             </div>
         </div>
     )
